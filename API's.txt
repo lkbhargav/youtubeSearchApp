@@ -1,0 +1,24 @@
+youtube api
+
+request link
+GET https://www.googleapis.com/youtube/v3/search?part=snippet&q=isro&key={YOUR_API_KEY}
+
+Parameters:
+pageToken for next page or previous page.
+
+api key
+AIzaSyCqMSMM1P41CuXoFXYpgb4k8r98zyoS-9c
+
+
+google location api
+
+https://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452&key=AIzaSyCGH-Ht0V95mlS7qupPI9_WfDkWZKuC7rY
+
+google youtube api (statistics for likes, dislikes, views & contentDetails for duration)
+
+https://www.googleapis.com/youtube/v3/videos?id=sAz2bRy8-L8&key=AIzaSyCqMSMM1P41CuXoFXYpgb4k8r98zyoS-9c&part=statistics,snippet,contentDetails
+
+google youtube api for video categories
+
+https://www.googleapis.com/youtube/v3/videoCategories?part=snippet&regionCode=iq&key=AIzaSyCqMSMM1P41CuXoFXYpgb4k8r98zyoS-9c
+

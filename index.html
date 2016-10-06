@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Youtube API
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script type="text/javascript" src="youtubeVideos.js"></script>
+        <link rel="stylesheet" type="text/css" href="main.css"/> 
+    </head>
+    
+    <body onload="getPosition()">
+        <h2>Search</h2> <br/>
+        <input type="text" id="search" onkeydown="javascript: keyCodeVerification(event)"/> <br/>
+        <br/>
+        
+        <h2>Select Location</h2>
+        <select id="locations" onchange="retrieveLocation()">
+            <option value="us"> United States </option>
+            <option value="in"> India </option>
+            <option value="fi"> Finland </option>
+        </select>
+        
+        <br/>
+        <br/>
+        <h2>Select categories</h2>
+        <select id="ddmenu" multiple></select>
+        
+        <br/>
+        <br/>
+        <label>Likes and Dislikes Ratio (Optional - Default is 20:1)</label>
+        <input type="number" value="5" id="likes"/>
+        <input id="searching" class="abtn-brown" type="submit" value="Search" onclick="javascript: search()"/>
+        <br/>
+        <br/>
+        <h2>Best Video Sorted as per requirement</h2>
+        <div id="divId"></div>
+        
+        <br/>
+        <br/>
+        <h2>Video's that match your categories condition</h2>
+        <div id="irre"></div>
+        
+        <br/>
+        <br/>
+        <h2>Irrelevant Video's</h2>
+        <div id="irrele"></div>
+        
+    </body>
+</html>
+
+
+<!-- http://api.openweathermap.org/data/2.5/weather?appid=1b83a17d019aea7811a9f93bf08d5c3a&mode=JSON&units=imperial&lat=40&lon=76 -->
